@@ -1,0 +1,53 @@
+<div class="container container-contact " id="contact-section" style="margin-top: 2%;">
+  <div class="header">
+    <div class="line"></div>
+    <h1>Contact me</h1>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-center">
+      <div class="contact-section">
+
+        <div class="background">
+          <div class="container">
+            <div class="screen">
+              <form action="javascript:void(0)" (submit)="send()">
+                <div class="screen-body" [formGroup]="form">
+
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input class="app-form-control" formControlName="from_name" name="from_name" id="from_name"
+                          placeholder="Full Name">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" formControlName="from_email" name="from_email" id="from_email"
+                          placeholder="Email">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" type="tel" formControlName="phone" name="phone" id="phone"
+                          placeholder="Phone">
+                      </div>
+                      <div class="app-form-group message">
+
+                        <textarea type="text" formControlName="message" name="message" id="message"
+                          placeholder="Message" class="app-form-control">
+                        </textarea>
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button class="app-form-button" type="submit">SEND</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

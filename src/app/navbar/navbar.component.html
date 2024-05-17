@@ -1,0 +1,30 @@
+<nav>
+    <div class="content">
+        <header>
+            <div class="navbar">
+                <div class="logo"> <img src="../../assets/img/logo.png" alt=""> </div>
+                <ul class="links">
+                    <li> <a (click)="HomeBtn()">Home</a></li>
+                    <li><a (click)="AboutMeBtn()"> About Me</a></li>
+                    <li><a (click)="serviceBtn()">My service</a></li>
+                    <li><a (click)="SkillsBtn()">Skills</a></li>
+                    <li><a (click)=" contactBtn()">Contact</a></li>
+
+                </ul>
+                <div #dropdownMenu class="toggle_btn">
+                    <i class="fa-solid fa-bars" (click)="toggleDropdown()"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <ul class="links">
+                    <li> <a (click)="HomeBtn()" >Home</a></li>
+                    <li><a (click)="AboutMeBtn()" class="aboutme"> About Me</a></li>
+                    <li><a (click)="serviceBtn()" class="services">My service</a></li>
+                    <li><a (click)="SkillsBtn()" >Skills</a></li>
+                    <li><a (click)=" contactBtn()">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+    </div>
+</nav>
